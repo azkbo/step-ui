@@ -49,7 +49,7 @@ class Column extends HTMLElement {
   connectedCallback() {}
   disconnectedCallback() {}
   adoptedCallback() {}
-  attributeChangedCallback(e) {}
+  attributeChangedCallback(name, oldValue, newValue) {}
   static get observedAttributes() {return ['your', 'name'];} 
 }
 

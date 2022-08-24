@@ -22,14 +22,25 @@
       <h1>Column</h1>
     </s-column>
 
+    <s-card onclick="toast()">
+      <h1>这是</h1>
+      <h1>Card</h1>
+    </s-card>
+
+    <!-- <s-toast msg="阿借鸡生蛋就啊快点回家看" /> -->
+
     <script>
       function toast() {
-        alert('sdadaadada')
+        // alert('sdadaadada');
+        SToast.show({msg: '萨达撒打算大'});
       }
 
     </script>
 
+    <!-- <script type="text/javascript" src="./index.js"></script> -->
     <script type="text/javascript" src="./components/row.js"></script>
+    <script type="text/javascript" src="./components/card.js"></script>
     <script type="text/javascript" src="./components/column.js"></script>
+    <script type="text/javascript" src="./components/toast.js"></script>
   </body>
 </html>

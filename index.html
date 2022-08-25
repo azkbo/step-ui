@@ -13,27 +13,44 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
-    <s-row>
-      <h1>这是: </h1>
-      <h1>Row</h1>
-    </s-row>
-    <s-column>
-      <h1>这是</h1>
-      <h1>Column</h1>
-    </s-column>
+    <s-row> <h1>这是: </h1> <h1>Row</h1> </s-row>
 
-    <s-card onclick="toast()">
-      <h1>这是</h1>
-      <h1>Card</h1>
-    </s-card>
+    <s-column> <h1>这是</h1> <h1>Column</h1> </s-column>
 
-    <!-- <s-toast msg="阿借鸡生蛋就啊快点回家看" /> -->
+    <s-card onclick="onalert()"> <h1>这是</h1> <h1>Card</h1> </s-card>
+
+    <h1 onclick="toast()">这是Toast</h1>
+    
+    <div id="parent" class="box">
+      <h1 id="child">点击这里!</h1>
+    </div>
+
 
     <script>
       function toast() {
-        // alert('sdadaadada');
-        SToast.show({msg: '萨达撒打算大'});
+        SToast.show({msg: '您已经点击了Toast哦！😯👵😄'});
       }
+      function onalert() {
+        alert('这是一条Alert哦！😯👵😄');
+      }
+
+      function onparent() {
+        console.log('---------> parent')
+      }
+      function onchild(event) {
+        console.log('---------> child');
+        event.stopPropagation()
+      }
+
+      const parent = document.getElementById('parent');
+      const child = document.getElementById('child');
+
+      parent.addEventListener('click', (event) => {
+        console.log('---------> parent')
+      }, true);
+      child.addEventListener('click', (event) => { 
+        console.log('---------> child');
+      }, true);
 
     </script>
 

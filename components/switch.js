@@ -2,7 +2,7 @@
  * Author: Meng
  * Desc: 
  */
- class Card extends HTMLElement {
+ class Switch extends HTMLElement {
   constructor() {
     super();
 
@@ -22,6 +22,6 @@
   }
 }
 // let the browser know about the custom element
-if (!customElements.get('s-card')) {
-  customElements.define('s-card', Card);
+if (!customElements.get('s-switch')) {
+  customElements.define('s-switch', Switch);
 }

@@ -9,3 +9,9 @@
   justify-content: center;
   
 }
+
+/* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+/* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+
+/* 插页 (阴影向内) | x 偏移量 | y 偏移量 | 阴影颜色 */
+/* box-shadow: inset 5em 1em gold; */

@@ -41,7 +41,7 @@ class Toast extends HTMLElement {
           font-size: 14px;
         }
       </style>
-      <div class="toast">
+      <div id="toast-content" class="toast">
         <span id="msg-str" class="str">${msg}</span>
       </div>
     `;
@@ -91,6 +91,8 @@ class Toast extends HTMLElement {
     if (name == 'msg') {
       if(!this.toast_msg) {
         this.toast_msg = this.shadowRoot.getElementById('msg-str');
+        // let toastDiv = this.shadowRoot.getElementById('toast-content');
+        // toastDiv.addEventListener('click', () => { },true);
       }
       if (newValue !== null) {
         this.toast_msg.innerText = newValue;
@@ -105,9 +107,6 @@ if (!customElements.get('s-toast')) {
   customElements.define('s-toast', Toast);
 
   window.SToast = {
-    info: function () {
-      console.log('----------------> info')
-    },
     show: function ({ msg = '', duration = 2000, icon = null } = {}) {
       clearTimeout(_toast_timer);
       const toast = new Toast();

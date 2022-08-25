@@ -1,0 +1,29 @@
+{
+  "name": "step-ui",
+  "version": "0.0.1",
+  "description": "一套基于 Web Components 编写的UI组件库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazog/step-ui.git"
+  },
+  "keywords": [
+    "Web Components",
+    "Components",
+    "step-ui",
+    "ui"
+  ],
+  "author": "Meng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazog/step-ui/issues"
+  },
+  "homepage": "https://github.com/kazog/step-ui#readme",
+  "files": [
+	  "index.js",
+		"components"
+	]
+}

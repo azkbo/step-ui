@@ -1,15 +1,6 @@
 .layout {
-  display: flex;
-  flex-direction: row;
-  background-color: violet;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
-  
-  align-items: center;
-  justify-content: center;
-  
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
 /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
 

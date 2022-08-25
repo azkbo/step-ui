@@ -21,9 +21,7 @@
 
     <h1 onclick="toast()">这是Toast</h1>
     
-    <div id="parent" class="box">
-      <h1 id="child">点击这里!</h1>
-    </div>
+    <s-switch>这是Switch</s-switch>
 
 
     <script>
@@ -34,23 +32,6 @@
         alert('这是一条Alert哦！😯👵😄');
       }
 
-      function onparent() {
-        console.log('---------> parent')
-      }
-      function onchild(event) {
-        console.log('---------> child');
-        event.stopPropagation()
-      }
-
-      const parent = document.getElementById('parent');
-      const child = document.getElementById('child');
-
-      parent.addEventListener('click', (event) => {
-        console.log('---------> parent')
-      }, true);
-      child.addEventListener('click', (event) => { 
-        console.log('---------> child');
-      }, true);
 
     </script>
 
@@ -59,5 +40,6 @@
     <script type="text/javascript" src="./components/card.js"></script>
     <script type="text/javascript" src="./components/column.js"></script>
     <script type="text/javascript" src="./components/toast.js"></script>
+    <script type="text/javascript" src="./components/switch.js"></script>
   </body>
 </html>

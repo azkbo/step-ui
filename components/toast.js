@@ -6,7 +6,7 @@
 let _toast_view = null;
 let _toast_timer = null;
 
-class Toast extends HTMLElement {
+export default class Toast extends HTMLElement {
   constructor() {
     super();
 

@@ -2,7 +2,7 @@
  * Author: Meng
  * Desc: 
  */
-class Row extends HTMLElement {
+ export default class Row extends HTMLElement {
   constructor() {
     super();
     const shadow = this.attachShadow({ mode: 'open' });

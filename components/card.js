@@ -2,7 +2,7 @@
  * Author: Meng
  * Desc: 
  */
- class Card extends HTMLElement {
+ export default class Card extends HTMLElement {
   constructor() {
     super();
 

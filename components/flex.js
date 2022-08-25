@@ -2,7 +2,7 @@
  * Author: Meng
  * Desc: 
  */
- class Flex extends HTMLElement {
+ export default class Flex extends HTMLElement {
   constructor() {
     super();
 

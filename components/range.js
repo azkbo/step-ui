@@ -2,7 +2,7 @@
  * Author: Meng
  * Desc: 
  */
- export default class Column extends HTMLElement {
+ export default class Range extends HTMLElement {
   constructor() {
     super();
 
@@ -12,13 +12,18 @@
         :host {
           display: flex;
           flex-direction: column;
+          padding: 12px;
+          border-radius: 8px;
+          box-shadow: 2px 8px 12px 6px rgba(0, 0, 0, 0.1);
         }
       </style>
-      <slot></slot>
+      <input type="range">
+        <slot></slot>
+      </input>
     `;
   }
 }
 // let the browser know about the custom element
-if (!customElements.get('s-column')) {
-  customElements.define('s-column', Column);
+if (!customElements.get('s-range')) {
+  customElements.define('s-range', Range);
 }

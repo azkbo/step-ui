@@ -55,5 +55,3 @@ if (!customElements.get('s-column')) {
   customElements.define('s-column', Column);
 }
 ```
-
-
